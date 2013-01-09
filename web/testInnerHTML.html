@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TestInnerHTML</title>
+    <link rel="stylesheet" href="testInnerHTML.css">
+  </head>
+  <body>
+    <h1>TestInnerHTML</h1>
+    
+    <div>{{ txt }}</div>
+    <hr/>
+    
+    <div innerHTML="{{ txt }}"></div>
+    <hr/>
+    
+    <div innerHTML="<strong>It works</strong> with if there are liquid tags: {{ txt }}"></div>
+    <hr/>
+    
+    <div innerHTML="<p>It does not work without liquid tags</p>"></div>
+    
+    <script type="application/dart" src="testInnerHTML.dart"></script>
+    <script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>
